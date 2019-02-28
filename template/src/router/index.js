@@ -17,7 +17,7 @@ export default new Router({
       redirect: '/show'
     },
     {
-      path: '/',
+      path: '/show',
       name: 'show',
       component: Show
     },    
