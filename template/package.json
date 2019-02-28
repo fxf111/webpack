@@ -31,7 +31,7 @@
     "axios": "^0.18.0"{{/axios}}{{#echarts}},
     "echarts": "^4.2.0-rc.2"{{/echarts}}{{#vuex}},
     "vuex": "^3.0.1"{{/vuex}}{{#element}},
-    "element-ui": "^2.4.11"{{/element}
+    "element-ui": "^2.4.11"{{/element}}
   },
   "devDependencies": {
     {{#lint}}
