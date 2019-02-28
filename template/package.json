@@ -27,11 +27,11 @@
   },
   "dependencies": {
     "vue": "^2.5.2"{{#router}},
-    "vue-router": "^3.0.1"{{/router}},
-    "axios": "^0.18.0",
-    "echarts": "^4.2.0-rc.2"{{#vuex}},
-    "vuex": "^3.0.1"{{/vuex}},
-    "element-ui": "^2.4.11"
+    "vue-router": "^3.0.1"{{/router}}{{#axios}},
+    "axios": "^0.18.0"{{/axios}}{{#echarts}},
+    "echarts": "^4.2.0-rc.2"{{/echarts}}{{#vuex}},
+    "vuex": "^3.0.1"{{/vuex}}{{#element}},
+    "element-ui": "^2.4.11"{{/element}
   },
   "devDependencies": {
     {{#lint}}
@@ -125,8 +125,8 @@
     "compressing": "^1.4.0",
     "fs-extra": "^7.0.1",
     "md5-file": "^4.0.0",
-    "compression-webpack-plugin": "^1.1.9"
-    
+    "compression-webpack-plugin": "^1.1.9"{{#mockjs}},
+    "mockjs": "^1.0.1-beta3"{{/mockjs}}
   },
   "engines": {
     "node": ">= 6.0.0",

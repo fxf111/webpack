@@ -51,6 +51,12 @@ module.exports = {
       type: 'string',
       message: 'Author',
     },
+    rootPath: {
+      when: 'isNotTest',
+      type: 'string',
+      message:'Input rootPath',
+      default: '/show/'
+    },
     build: {
       when: 'isNotTest',
       type: 'list',
@@ -78,7 +84,27 @@ module.exports = {
       when: 'isNotTest',
       type: 'confirm',
       message: 'Install vuex?',
+    },
+    axios: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install axios?'
     },    
+    element: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install element-ui?'
+    },     
+    echarts: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install echarts?'
+    },  
+    mockjs: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install mockjs?'
+    },   
     lint: {
       when: 'isNotTest',
       type: 'confirm',

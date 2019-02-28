@@ -37,7 +37,7 @@ async function copyFiles (src, dest, cb) {
 
 
 if(fs.existsSync(outputDirectory)) {
-  console.log(chalk.yellow('开始上一版本打包文件...\n'));
+  console.log(chalk.yellow('开始处理上一版本打包文件...\n'));
   copyFiles(outputDirectory, backupDirectory, build);
   
 } else {

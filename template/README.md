@@ -18,6 +18,9 @@ npm run build
 npm run build --report
 {{#unit}}
 
+# 增量打包
+npm run build-delta
+
 # run unit tests
 npm run unit
 {{/unit}}
