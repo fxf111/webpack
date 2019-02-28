@@ -71,7 +71,7 @@ table {
     text-align: center;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Agency FB Bold";
     src: url("../fonts/DS-DIGII.ttf");
 }
@@ -79,10 +79,10 @@ table {
     font-family:'digital';
     src: url('../fonts/digital.ttf');
 }
-/* @font-face {
+@font-face {
     font-family:'zhskt';
     src: url('../fonts/zhskt.ttf');
-} */
+}
 @font-face {
     font-family:'syht';
     src: url('../fonts/SourceHanSansSC-Regular.otf');
@@ -90,7 +90,7 @@ table {
 @font-face {
     font-family:'pmzd';
     src: url('../fonts/pmzd.ttf');
-}
+} */
 .countdown {
     font-family: "Agency FB Bold";
 }
