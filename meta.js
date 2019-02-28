@@ -202,7 +202,7 @@ module.exports = {
     'test/e2e/**/*': 'e2e',
     'src/router/**/*': 'router',
     'mock/*': 'mockjs',
-    'store/**/*': 'vuex',
+    'src/store/**/*': 'vuex',
     'src/api/**/*': 'axios'
   },
   complete: function(data, { chalk }) {
