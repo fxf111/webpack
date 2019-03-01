@@ -42,6 +42,7 @@ module.exports = {
       'js': resolve('src/assets/js'),
       'css': resolve('src/assets/css'),
       'cmp': resolve('src/components'),
+      'types': resolve('src/types'),
     }
   },
   module: {
