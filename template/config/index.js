@@ -3,7 +3,12 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
-const rootPath = '{{ rootPath }}'    //项目根路径
+
+let rootPath = '{{ rootPath }}'    //项目根路径
+rootPath = rootPath.trim();
+if(/^\/$/.test(rootPath)) {
+  rootPath += '/';
+}
 module.exports = {
   rootPath: rootPath,
   dev: {
