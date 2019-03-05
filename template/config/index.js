@@ -6,7 +6,7 @@ const path = require('path')
 
 let rootPath = '{{ rootPath }}'    //项目根路径
 rootPath = rootPath.trim();
-if(/^\/$/.test(rootPath)) {
+if(/[^/]$/.test(rootPath)) {
   rootPath += '/';
 }
 module.exports = {
