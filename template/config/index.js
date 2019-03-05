@@ -11,6 +11,7 @@ if(/[^/]$/.test(rootPath)) {
 }
 
 const outputPath = '/dist/' + rootPath.split('/').splice(-2,-1) + '/'
+console.log('outputPath-->' + outputPath)
 module.exports = {
   rootPath: rootPath,
   dev: {
