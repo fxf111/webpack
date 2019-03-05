@@ -9,6 +9,8 @@ rootPath = rootPath.trim();
 if(/[^/]$/.test(rootPath)) {
   rootPath += '/';
 }
+
+const outputPath = '/dist/' + rootPath.split('/').splice(-2,-1) + '/'
 module.exports = {
   rootPath: rootPath,
   dev: {
@@ -52,10 +54,10 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '..' + rootPath + 'index.html'),
+    index: path.resolve(__dirname, '..' + outputPath + 'index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '..' + rootPath.slice(0, rootPath.length - 1)),
+    assetsRoot: path.resolve(__dirname, '..' + outputPath.slice(0, rootPath.length - 1)),
     assetsSubDirectory: 'static',
     assetsPublicPath: rootPath,
 
