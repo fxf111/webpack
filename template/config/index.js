@@ -9,9 +9,11 @@ rootPath = rootPath.trim();
 if(/[^/]$/.test(rootPath)) {
   rootPath += '/';
 }
-
-const outputPath = '/dist/' + rootPath.split('/').slice(-2,-1) + '/'
-console.log('outputPath-->' + outputPath)
+let outputPath = '/dist/' + rootPath.split('/').slice(-2,-1) ;
+if(/[^/]$/.test(outputPath)) {
+  outputPath += '/';
+}
+console.log('outputPath-->' +path.resolve(__dirname, '..' + outputPath.slice(0, outputPath.length - 1)))
 module.exports = {
   rootPath: rootPath,
   dev: {
