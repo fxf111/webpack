@@ -101,7 +101,8 @@ function getTimeString(){
 
 //压缩文件
 function dir2zip(src) {
-  let dest = src + '-backup-' + getTimeString() + '.zip';
+  fs.ensureDirSync(src + '-bak');
+  let dest = path.resolve(src + '-bak' ,'dist-backup-' + getTimeString() + '.zip');
   const zipStream = new compressing.zip.Stream();
   zipStream.addEntry(src);
   console.log(chalk.yellow('开始压缩...\n'))
