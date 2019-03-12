@@ -126,7 +126,10 @@
     "fs-extra": "^7.0.1",
     "md5-file": "^4.0.0",
     "compression-webpack-plugin": "^1.1.9"{{#mockjs}},
-    "mockjs": "^1.0.1-beta3"{{/mockjs}}
+    "mockjs": "^1.0.1-beta3"{{/mockjs}}{{#less}},
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    {{/less}}
   },
   "engines": {
     "node": ">= 6.0.0",

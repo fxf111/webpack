@@ -105,6 +105,11 @@ module.exports = {
       type: 'confirm',
       message: 'Install mockjs?'
     },   
+    less: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Use less style?'
+    }, 
     lint: {
       when: 'isNotTest',
       type: 'confirm',
